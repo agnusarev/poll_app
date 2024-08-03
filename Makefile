@@ -13,6 +13,6 @@ linting:
 mypy:
 	poetry run mypy src
 
-# .PHONY: run_server
-# run_server:
-# 	poetry run python src/api_scoring/api.py
+.PHONY: run_server
+run_server:
+	poetry run py src/poll_app/manage.py runserver
