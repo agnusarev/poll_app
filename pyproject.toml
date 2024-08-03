@@ -9,6 +9,7 @@ packages = [{include = "poll_app", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.12"
 django = "^5.0.7"
+psycopg2 = "^2.9.9"
 
 
 [tool.poetry.group.test.dependencies]
@@ -21,6 +22,7 @@ flake8 = "^7.1.0"
 black = "^24.8.0"
 pylint = "^3.2.6"
 mypy = "^1.11.1"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
