@@ -28,12 +28,12 @@ make test
     <th>value</th>
   </tr>
   <tr>
-    <td>SECRET_KEY</td>
-    <td>POSTGRES_DB</td>
-    <td>POSTGRES_USER</td>
-    <td>POSTGRES_PASSWORD</td>
-    <td>POSTGRES_HOST</td>
-    <td>POSTGRES_PORT</td>
-    <td>POSTGRES_SCHEMA</td>
+    <td>SECRET_KEY</td><td></td>
+    <td>POSTGRES_DB</td><td></td>
+    <td>POSTGRES_USER</td><td></td>
+    <td>POSTGRES_PASSWORD</td><td></td>
+    <td>POSTGRES_HOST</td><td></td>
+    <td>POSTGRES_PORT</td><td></td>
+    <td>POSTGRES_SCHEMA</td><td></td>
   </tr>
 </table>
