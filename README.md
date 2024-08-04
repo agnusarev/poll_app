@@ -36,13 +36,4 @@ make test
     <td>POSTGRES_PORT</td>
     <td>POSTGRES_SCHEMA</td>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
 </table>
