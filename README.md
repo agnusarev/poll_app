@@ -19,3 +19,30 @@ make run_server
 ````bash
 make test
 ````
+
+## .env example
+
+<table>
+  <tr>
+    <th>variable</th>
+    <th>value</th>
+  </tr>
+  <tr>
+    <td>SECRET_KEY</td>
+    <td>POSTGRES_DB</td>
+    <td>POSTGRES_USER</td>
+    <td>POSTGRES_PASSWORD</td>
+    <td>POSTGRES_HOST</td>
+    <td>POSTGRES_PORT</td>
+    <td>POSTGRES_SCHEMA</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
