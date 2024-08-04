@@ -1,7 +1,7 @@
 # Makefile
 .PHONY: test
 test:
-	poetry run py src/poll_app/manage.py test --noinput polls
+	poetry run python src/poll_app/manage.py test --noinput polls
 
 .PHONY: linting
 linting:
@@ -15,12 +15,12 @@ mypy:
 
 .PHONY: run_server
 run_server:
-	poetry run py src/poll_app/manage.py runserver
+	poetry run python src/poll_app/manage.py runserver
 
 .PHONY: migrate
 migrate:
-	poetry run py src/poll_app/manage.py migrate
+	poetry run python src/poll_app/manage.py migrate
 
 .PHONY: make_migrations
 make_migrations:
-	poetry run py src/poll_app/manage.py makemigrations polls
+	poetry run python src/poll_app/manage.py makemigrations polls
