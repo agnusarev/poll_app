@@ -1,13 +1,6 @@
 import datetime
 
-from django.db.models import (
-    CASCADE,
-    CharField,
-    DateTimeField,
-    ForeignKey,
-    IntegerField,
-    Model,
-)
+from django.db.models import CASCADE, CharField, DateTimeField, ForeignKey, IntegerField, Model
 from django.utils import timezone
 
 
