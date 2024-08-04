@@ -16,3 +16,11 @@ mypy:
 .PHONY: run_server
 run_server:
 	poetry run py src/poll_app/manage.py runserver
+
+.PHONY: migrate
+migrate:
+	poetry run py src/poll_app/manage.py migrate
+
+.PHONY: make_migrations
+make_migrations:
+	poetry run py src/poll_app/manage.py makemigrations polls
