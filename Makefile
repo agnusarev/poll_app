@@ -1,7 +1,7 @@
 # Makefile
 .PHONY: test
 test:
-	poetry run pytest tests/
+	poetry run py src/poll_app/manage.py test --noinput polls
 
 .PHONY: linting
 linting:

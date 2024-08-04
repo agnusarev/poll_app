@@ -84,7 +84,7 @@ WSGI_APPLICATION = "poll_app.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "OPTIONS": {"options": f"-c search_path={os.getenv("POSTGRES_SCHEMA")}"},
+        "OPTIONS": {"options": f"-c search_path={os.getenv("POSTGRES_SCHEMA")},public"},
         "NAME": os.getenv("POSTGRES_DB"),
         "USER": os.getenv("POSTGRES_USER"),
         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
