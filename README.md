@@ -23,17 +23,29 @@ make test
 ## .env example
 
 <table>
-  <tr>
-    <th>variable</th>
-    <th>value</th>
-  </tr>
-  <tr>
-    <td>SECRET_KEY</td><td></td>
-    <td>POSTGRES_DB</td><td></td>
-    <td>POSTGRES_USER</td><td></td>
-    <td>POSTGRES_PASSWORD</td><td></td>
-    <td>POSTGRES_HOST</td><td></td>
-    <td>POSTGRES_PORT</td><td></td>
-    <td>POSTGRES_SCHEMA</td><td></td>
-  </tr>
+    <tr>
+        <th>variable</th>
+        <th>value</th>
+    </tr>
+    <tr>
+        <td>SECRET_KEY</td><td></td>
+    </tr>
+    <tr>
+        <td>POSTGRES_DB</td><td></td>
+    </tr>
+    <tr>
+        <td>POSTGRES_USER</td><td></td>
+    </tr>
+    <tr>
+        <td>POSTGRES_PASSWORD</td><td></td>
+    </tr>
+    <tr>
+        <td>POSTGRES_HOST</td><td></td>
+    </tr>
+    <tr>
+        <td>POSTGRES_PORT</td><td></td>
+    </tr>
+    <tr>
+        <td>POSTGRES_SCHEMA</td><td></td>
+    </tr>
 </table>
