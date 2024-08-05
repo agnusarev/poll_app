@@ -1,0 +1,48 @@
+#!/bin/bash
+
+echo_visual_line () {
+    py -c 'print("#" * 120)'
+}
+echo "#"
+echo
+echo_visual_line
+echo "STARTING PRE-PUSH"
+echo_visual_line
+echo
+
+# TESTING
+###################################################################################################
+echo "-----PRE-PUSH: TESTING"
+echo_visual_line
+
+message="[Policy] =====Doing unit tests ...====="
+echo -e "\033[1;34mInfo: $message\033[0m"
+
+poetry run python src/poll_app/manage.py test --noinput polls
+
+code=$?
+
+if [ $code -eq 0 ]; then
+    message="[Policy] =====Passed unit tests.====="
+    echo -e "\033[1;32mOK: $message\033[0m"
+elif [ $code -eq 5 ]; then
+    message="[Policy] =====No tests ran.====="
+    echo -e "\033[1;32mOK: $message\033[0m"
+else
+    message="[Policy] =====Unit tests failed, please check and fix your code.====="
+    echo -e "\033[1;31mERROR: $message\033[0m";
+    exit 1   
+fi
+echo_visual_line
+echo
+echo
+###################################################################################################
+
+
+echo_visual_line
+echo "ENDING PRE-COMMIT"
+echo_visual_line
+echo
+echo "#"
+
+exit 0
